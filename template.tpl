@@ -1,8 +1,16 @@
-﻿___INFO___
+___TERMS_OF_SERVICE___
+
+By creating or modifying this file you agree to Google Tag Manager's Community
+Template Gallery Developer Terms of Service available at
+https://developers.google.com/tag-manager/gallery-tos (or such other URL as
+Google may provide), as modified from time to time.
+ 
+ ___INFO___
 
 {
   "displayName": "Cookiebot Consent State",
   "description": "Use with the Cookiebot CMP Tag to signal the individual website user's consent state to tags that are setting cookies.",
+  "categories": ["TAG_MANAGEMENT", "PERSONALIZATION"],
   "securityGroups": [],
   "id": "cvt_temp_public_id",
   "type": "MACRO",

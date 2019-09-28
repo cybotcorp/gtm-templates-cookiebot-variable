@@ -1,5 +1,5 @@
-homepage: "www.cookiebot.com",
-documentation: "https://support.cookiebot.com/hc/en-us/articles/360003793854",
+homepage: "www.cookiebot.com"
+documentation: "https://support.cookiebot.com/hc/en-us/articles/360003793854"
 versions:
-  - sha:  a279d77
-    changeNotes: Initial Version
+  - sha:  6467fa8
+    changeNotes: Add GTM terms and categories

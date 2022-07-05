@@ -78,24 +78,17 @@ if (queryPermission('get_cookies', cookieName)) {
   cookieValues = getCookieValues(cookieName);
   if (cookieValues && cookieValues.length > 0) {
   	let consentCookie = cookieValues[0].toLowerCase();
-    if(consentCookie === "-1") //user is outside applicable jurisdiction > full consent
+    if (consentCookie.indexOf('preferences:true') > -1)
     {
-      returnValue = '|preferences|statistics|marketing|'; 
+      returnValue += 'preferences|';
     }
-    else
+    if (consentCookie.indexOf('statistics:true') > -1)
     {
-      if (consentCookie.indexOf('preferences:true') > -1)
-      {
-        returnValue += 'preferences|';
-      }
-      if (consentCookie.indexOf('statistics:true') > -1)
-      {
-        returnValue += 'statistics|';
-      }
-      if (consentCookie.indexOf('marketing:true') > -1)
-      {
-        returnValue += 'marketing|';
-      }
+      returnValue += 'statistics|';
+    }
+    if (consentCookie.indexOf('marketing:true') > -1)
+    {
+      returnValue += 'marketing|';
     }
   }
 }
